@@ -8,15 +8,18 @@
 	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
 </head>
 <body>
-	<div class="header"></div>
+	<div class="wrapper">
+		<div class="header">
+			<h1>The Stress Test</h1>
+			<p>What stresses you out? How do you wind down? We want to know!</p>
+			<br>
+			<p>First, tell us about yourself before we get started.</p>
+		</div>
 
-	<div class="welcome">
-		<h1>Welcome to the Stress Test</h1>
-		<p> This is a stress test website created by the #digitalhub. Kindly fill in your particular in the table below.</p>
-		<div class="wrap">
-			<form>
+		<div class="content">
+			<form method="post" action="">
 				<label>Name</label>
-				<input name="name" placeholder="Type here">
+				<input name="name" placeholder="Tell us your name">
 				<label>Region</label>
 				<select>
 					<option>--Select--</option>
@@ -27,8 +30,6 @@
 				<label>Location</label>
 				<select>
 					<option>--Select--</option>
-					<option value="Malaysia">Malaysia</option>
-					<option value="Singapore">Singapore</option>
 				</select>
 				<label>Position</label>
 				<select>
@@ -45,8 +46,14 @@
 				<label>E-mail Address</label>
 				<input name="email" type="email" placeholder="Type here">
 				<input id="submit" name="submit" type="submit" value="NEXT">
-			</form></div>
+			</form>
 		</div>
+	</div>
 
-	</body>
-	</html>
+	<div class="footer">
+		<p>Copyright© 2013 Text100</p>
+		<p>All images from Corbis. For internal user only. Not for distribution.</p>
+	</div>
+
+</body>
+</html>

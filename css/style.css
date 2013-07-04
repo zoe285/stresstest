@@ -1,10 +1,59 @@
-form{
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,700);
+
+html, body {
+	height: 100%;
+}
+body {
+	font: 16px "Titillium Web", sans-serif;
+	background-color: #444;
+}
+h1 {
+	font-size: 3em;
+}
+form {
 	display: block;
-	margin: 20px;
+	padding: 20px;
 }
 label, input {
 	display: block;
 }
 input {
 	margin-bottom: 10px;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	min-height: 100%;
+}
+.header {
+	width: 100%;
+	height: 250px;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+	background: url(../images/header-bg.png) repeat;
+}
+.header h1 {
+	color: #f4fc8c;
+	padding-top: 30px;
+	font-size: 5em;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+.content {
+	background: url(../images/bg.jpg) repeat;
+	overflow: auto;
+	padding-bottom: 50px;
+}
+.footer {
+	background-color: #000;
+	color: #fff;
+	margin-top: -50px;
+	height: 50px;
+	position: relative;
+	clear: both;
+
+	font-size: 0.7em;
+	text-align: center;
 }
