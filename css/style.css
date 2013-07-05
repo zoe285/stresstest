@@ -1,10 +1,13 @@
-@import url(http://fonts.googleapis.com/css?family=Boogaloo:400,700);
+@import url(http://fonts.googleapis.com/css?family=Chelsea+Market:400,700);
+@import url(http://fonts.googleapis.com/css?family=Erica+One:400,700);
+@import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono:400,700);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,700);
 
 html, body {
 	height: 100%;
 }
 body {
-	font: 16px "Boogaloo", sans-serif;
+	font: 16px "Titillium Web", sans-serif;
 	background-color: #444;
 }
 h1 {
@@ -27,7 +30,6 @@ input, select {
 }
 .header {
 	width: 100%;
-	height: 250px;
 	margin: 0 auto;
 	text-align: center;
 	color: #fff;
@@ -36,14 +38,15 @@ input, select {
 .header h1 {
 	color: #f4fc8c;
 	padding-top: 30px;
-	font-size: 5em;
+	font: 5em "Share Tech Mono", sans-serif;
+	font-weight: bold;
 	text-transform: uppercase;
-	text-decoration: underline;
 }
 .content {
 	background: url(../images/bg.jpg) repeat;
 	overflow: auto;
 	padding-bottom: 50px;
+	border: 5px solid #000;
 }
 .footer {
 	background-color: #000;
@@ -64,4 +67,60 @@ input, select {
 .error {
 	color: #ff0000;
 	font-size: 0.7em;
+}
+
+#main {
+	float: left;
+	width: 545px;
+	border-right: 5px solid #000;
+	border-bottom: 5px solid #000;
+}
+.part {
+	float: left;
+	width: 10%;
+	height: 30px;
+	padding: 0 5%;
+	background: #f05a24;
+	color: #fff;
+}
+.desc {
+	float: left;
+	width: 75%;
+	height: 30px;
+	padding: 0 2.5%;
+	position: relative;
+	background: #fff;
+}
+.desc:after {
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(0, 0, 0, 0);
+	border-right-color: #fff;
+	border-width: 15px;
+	top: 50%;
+	margin-top: -15px;
+}
+.image-tile {
+	float: left;
+	border-top: 5px solid #000;
+	cursor: pointer;
+}
+.right {
+	border-right: 5px solid #000;
+}
+
+#sidebar {
+	float: left;
+	width: 400px;
+	border-bottom: 5px solid #000;
+}
+#stressometer {
+	font-size: 1.5em;
+	color: #29aae1;
+	text-align: center;
 }

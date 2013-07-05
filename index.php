@@ -3,7 +3,7 @@ Title: Form Page (First)
 Description: Collect personal information and save to database 
 -->
 <?php
-
+session_start();
 include 'database.php';
 
 $errormsg = '';
@@ -48,6 +48,7 @@ if(isset($_POST['submit'])) {
 		$sql = "INSERT INTO users (name, email, age, region, location, position) VALUES ('".$name."','".$email."','".$age."','".$region."','".$location."','".$position."')";
 		$result = mysqli_query($connection, $sql);
 		if($result) {
+			$_SESSION['id'] = mysqli_insert_id($connection);
 			header('Location:quiz1.php');
 		} else {
 			$errormsg = 'There was an error with your information. Please try again.';
@@ -112,4 +113,6 @@ if(isset($_POST['submit'])) {
 	</div>
 </div>
 
+<script src="js/jquery.validate.min.js" type="text/javascript"></script>
+<script src="js/index.js" type="text/javascript"></script>
 <?php include 'footer.php'; ?>

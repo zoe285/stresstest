@@ -6,8 +6,6 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
-	<script src="js/jquery.validate.min.js" type="text/javascript"></script>
-	<script src="js/jscript.js" type="text/javascript"></script>
 </head>
 <body>
 	<div class="wrapper">

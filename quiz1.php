@@ -3,6 +3,7 @@ Title: Quiz Page 1
 Description: First part to find out what stresses users out 
 -->
 <?php
+session_start();
 ?>
 
 <?php include 'header.php'; ?>
@@ -15,8 +16,25 @@ Description: First part to find out what stresses users out
 </div>
 
 <div class="content">
-	<div class="wrap">
+	<div id="main">
+		<div class="part">PART 1</div>
+		<div class="desc">Click on the scenarios that stresses you out</div>
+
+		<div class="image-tile right"><img src="images/commute-normal.jpg" /></div>
+		<div class="image-tile"><img src="images/parent-normal.jpg" /></div>
+		<div class="image-tile right"><img src="images/work-normal.jpg" /></div>
+		<div class="image-tile"><img src="images/finance-normal.jpg" /></div>
+		<div class="image-tile right"><img src="images/relationship-normal.jpg" /></div>
+		<div class="image-tile"><img src="images/health-normal.jpg" /></div>
+		<div class="image-tile right"><img src="images/news-normal.jpg" /></div>
+		<div class="image-tile"><img src="images/pollution-normal.jpg" /></div>
+	</div>
+
+	<div id="sidebar">
+		<div id="stressometer">STRESSOMETER</div>
+		<br><br>
 	</div>
 </div>
 
+<script src="js/quiz1.js" type="text/javascript"></script>
 <?php include 'footer.php'; ?>
