@@ -14,10 +14,10 @@ form {
 	display: block;
 	padding: 20px;
 }
-label, input {
+label, input, select {
 	display: block;
 }
-input {
+input, select {
 	margin-bottom: 10px;
 }
 
@@ -56,4 +56,9 @@ input {
 
 	font-size: 0.7em;
 	text-align: center;
+}
+
+.error {
+	color: #ff0000;
+	font-size: 0.7em;
 }
