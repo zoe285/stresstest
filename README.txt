@@ -2,4 +2,4 @@ This is an interactive infographic demo prototype, brought to you by The Digital
 
 http://www.text100.com/
 
-by suyi
+by suyi yada yada yada
